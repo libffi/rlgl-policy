@@ -1,7 +1,10 @@
-# Red Light Green Light exception policy.
+# Red Light Green Light exception policy for libffi.
+#
+# https://github.com/atgreen/red-light-green-light
 
 # This file contains all "expected failures" that rlgl will give a
-# pass on.
+# pass on.  Be sure to add policy expiration dates for each exception
+# unless they really are permanent.
 
 # ------------------------------------------------------------------------------------
 # We have some sh4 failures when we test on QEMU.  They look like this:
@@ -28,4 +31,10 @@
 # qemu: uncaught target signal 6 (Aborted) - core dumped
 
 { "result": "FAIL", "host": "m68k-unknown-linux-gnu", "id": "^.*execution test"} 2020-05-12
+
+# ------------------------------------------------------------------------------------
+# All of the s390x qemu execution tests are silently failing.
+
+{ "result": "FAIL", "host": "s390x-unknown-linux-gnu", "id": "^.*execution test"} 2020-05-12
+
 

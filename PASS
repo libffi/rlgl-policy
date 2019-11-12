@@ -1,2 +1,6 @@
 # The default PASS rule.
 { "result": "PASS" }
+
+# Every XPASS and XFAIL is a PASS as well because they are expected.
+{ "result": "XPASS" }
+{ "result": "XFAIL" }
