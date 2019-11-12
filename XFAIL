@@ -35,6 +35,6 @@
 # ------------------------------------------------------------------------------------
 # All of the s390x qemu execution tests are silently failing.
 
-{ "result": "FAIL", "host": "s390x-unknown-linux-gnu", "id": "^.*execution test"} 2020-05-12
+{ "result": "FAIL", "host": "s390x-ibm-linux-gnu", "id": "^.*execution test"} 2020-05-12
 
 
