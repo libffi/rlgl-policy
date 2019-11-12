@@ -3,6 +3,14 @@
 # This file contains all "expected failures" that rlgl will give a
 # pass on.
 
+# ------------------------------------------------------------------------------------
+# We have some sh4 failures when we test on QEMU.  They look like this:
+# qemu: uncaught target signal 6 (Aborted) - core dumped
+
+{ "result": "FAIL", "host": "sh4-unknown-linux-gnu", "id": "^.*test-callback.*DGTEST=5[456].*execution test"} 2020-05-12
+{ "result": "FAIL", "host": "sh4-unknown-linux-gnu", "id": "^.*test-call[^b].*DGTEST=5[567].*execution test"} 2020-05-12
+
+# ------------------------------------------------------------------------------------
 # All of the m68k-unknown-linux-gnu execution tests are failing right
 # now.  Not sure what's going on.  We're currently using qemu, and
 # every coldfire executable result looks like this:
@@ -20,3 +28,4 @@
 # qemu: uncaught target signal 6 (Aborted) - core dumped
 
 { "result": "FAIL", "host": "m68k-unknown-linux-gnu", "id": "^.*execution test"} 2020-05-12
+
