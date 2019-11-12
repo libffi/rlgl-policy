@@ -3,7 +3,20 @@
 # This file contains all "expected failures" that rlgl will give a
 # pass on.
 
+# All of the m68k-unknown-linux-gnu execution tests are failing right
+# now.  Not sure what's going on.  We're currently using qemu, and
+# every coldfire executable result looks like this:
+#
+# qemu: unhandled CPU exception 0x3 - aborting
+# D0 = 00000000   A0 = 00000000   F0 = 0000000000000000 (           0)
+# D1 = 00000000   A1 = 00000000   F1 = 0000000000000000 (           0)
+# D2 = 00000000   A2 = 00000000   F2 = 0000000000000000 (           0)
+# D3 = 00000000   A3 = 00000000   F3 = 0000000000000000 (           0)
+# D4 = 00000000   A4 = 00000000   F4 = 0000000000000000 (           0)
+# D5 = 00000000   A5 = 00000000   F5 = 0000000000000000 (           0)
+# D6 = 00000000   A6 = f6fffa14   F6 = 0000000000000000 (           0)
+# D7 = 00000000   A7 = f6fff7bc   F7 = 0000000000000000 (           0)
+# PC = f67e0dfa   SR = 0008 -N--- FPRESULT =            0
+# qemu: uncaught target signal 6 (Aborted) - core dumped
 
-
-
-
+{ "result": "FAIL", "host": "m68k-unknown-linux-gnu", "id": "^.*execution test"} 2020-05-12
