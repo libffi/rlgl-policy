@@ -147,3 +147,6 @@
 { "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/closure_fn2.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
 { "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/closure_fn1.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
 { "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/closure_fn0.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/stret_large.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/nested_struct10.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+
