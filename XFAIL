@@ -89,6 +89,7 @@
 { "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_pointer.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
 { "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_multi_ushortchar.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
 { "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_multi_ushort.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_multi_schar.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
 { "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_multi_uchar.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
 { "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_multi_sshortchar.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
 { "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_multi_sshort.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
