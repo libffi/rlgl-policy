@@ -37,4 +37,113 @@
 
 { "result": "FAIL", "host": "s390x-ibm-linux-gnu", "id": "^.*execution test"} 2020-05-12
 
+# ------------------------------------------------------------------------------------
+# mingw32-on-wine errors.
+#
+# Some tests trigger the following message from wine, which confuses dejagnu.  The
+# error message is...
+#
+# Output was:
+# Application tried to create a window, but no driver could be loaded.
+# Make sure that your X server is running and that $DISPLAY is set correctly.
+# err:systray:initialize_systray Could not create tray window
 
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/va_struct3.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/va_struct2.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/va_struct1.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/va_1.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/unwindtest_ffi_call.cc -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/unwindtest.cc -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/stret_medium2.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/stret_medium.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/stret_large2.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/problem1.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/nested_struct9.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/nested_struct8.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/nested_struct7.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/nested_struct6.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/nested_struct5.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/nested_struct4.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/nested_struct3.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/nested_struct2.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/nested_struct11.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/nested_struct1.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/nested_struct.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/huge_struct.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/huge_struct.c -W -Wall -Wno-psabi -O2 (test for excess errors)"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/float_va.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/float2.c -W -Wall -Wno-psabi -O2 (test for excess errors)"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_ushort_va.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_ushort.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_ulonglong.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_ulong_va.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_uint_va.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_uint.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_uchar_va.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_uchar.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_struct_va1.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_sshort.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_sint.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_schar.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_pointer_stack.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_pointer.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_multi_ushortchar.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_multi_ushort.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_multi_uchar.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_multi_sshortchar.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_multi_sshort.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_longdouble.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_longdouble.c -W -Wall -Wno-psabi -O2 (test for excess errors)"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_float.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_double_va.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_double.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_dbls_struct.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_align_uint64.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_align_uint32.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_align_uint16.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_align_sint64.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_align_sint32.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_align_sint16.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_align_pointer.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_align_longdouble_split2.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_align_longdouble_split2.c -W -Wall -Wno-psabi -O2 (test for excess errors)"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_align_longdouble_split.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_align_longdouble_split.c -W -Wall -Wno-psabi -O2 (test for excess errors)"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_align_longdouble.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_align_float.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_align_double.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_9byte2.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_9byte1.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_8byte.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_7byte.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_7_1_byte.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_6byte.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_6_1_byte.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_64byte.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_5byte.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_5_1_byte.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_4byte.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_4_1byte.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_3float.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_3byte2.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_3byte1.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_3_1byte.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_2byte.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_24byte.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_20byte1.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_20byte.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_1_1byte.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_19byte.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_18byte.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_16byte.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/cls_12byte.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/closure_simple.c -W -Wall -Wno-psabi -O2 -DABI_NUM=FFI_GNUW64 -DABI_ATTR=__MSABI__ output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/closure_simple.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/closure_loc_fn0.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/closure_fn6.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/closure_fn5.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/closure_fn4.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/closure_fn3.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/closure_fn2.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/closure_fn1.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/closure_fn0.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
