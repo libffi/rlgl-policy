@@ -44,6 +44,17 @@
 
 { "result": "FAIL", "host": "m32r-unknown-elf", "id": "^.*test for excess errors\\)"} 2020-05-12
 
+# m32r has a problem with long longs...
+#
+# FAIL: libffi.call/return_ll1.c -W -Wall -Wno-psabi output pattern test
+# Output was:
+# res: 2587, 52938470
+# 
+# Should match:
+# res: 11111133333222, 11111133333222
+
+{ "result": "FAIL", "host": "m32r-unknown-elf", "id": "libffi.call/return_ll1.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+
 # ------------------------------------------------------------------------------------
 # The bfin headers are messed up, causing failures. This is a real libffi bug.
 #
