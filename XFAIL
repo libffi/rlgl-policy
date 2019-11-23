@@ -38,12 +38,6 @@
 { "result": "FAIL", "host": "s390x-ibm-linux-gnu", "id": "^.*execution test"} 2020-05-12
 
 # ------------------------------------------------------------------------------------
-# The m32r headers are messed up, causing failures. This is a real libffi bug.
-#
-# warning: implicit declaration of function ffi_closure_alloc
-
-{ "result": "FAIL", "host": "m32r-unknown-elf", "id": "^.*test for excess errors\\)"} 2020-05-12
-
 # m32r has a problem with long longs...
 #
 # FAIL: libffi.call/return_ll1.c -W -Wall -Wno-psabi output pattern test
@@ -56,13 +50,7 @@
 { "result": "FAIL", "host": "m32r-unknown-elf", "id": "^.*return_ll1.*output pattern test" } 2020-05-12
 
 # ------------------------------------------------------------------------------------
-# The bfin headers are messed up, causing failures. This is a real libffi bug.
-#
-# warning: implicit declaration of function ffi_closure_alloc
-
-{ "result": "FAIL", "host": "bfin-unknown-elf", "id": "^.*test for excess errors\\)"} 2020-05-12
-
-# All execution tests on the GDB simulator fail like so:
+# All execution tests on the blackfin GDB simulator fail like so:
 # 
 # Unhandled exception 0x24 at 0x00005200 (Unaligned data access)
 # program stopped with signal 4 (Illegal instruction).
