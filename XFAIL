@@ -7,6 +7,12 @@
 # unless they really are permanent.
 
 # ------------------------------------------------------------------------------------
+# For x86_64, GCC on the travis is old, and contains an MSABI bug.
+
+{ "result": "FAIL", "host": "x86_64-pc-linux-gnu", "id": "^.*test-callback.*DGTEST=5[456].*__MSABI__ execution test"} 2020-05-12
+{ "result": "FAIL", "host": "x86_64-pc-linux-gnu", "id": "^.*test-call[^b].*DGTEST=5[567].*__MSABI__ execution test"} 2020-05-12
+
+# ------------------------------------------------------------------------------------
 # We have some sh4 failures when we test on QEMU.  They look like this:
 # qemu: uncaught target signal 6 (Aborted) - core dumped
 
