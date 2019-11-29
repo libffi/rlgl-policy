@@ -196,3 +196,93 @@
 { "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.closures/stret_medium2.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
 { "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.closures/unwindtest.cc -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
 { "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.closures/unwindtest_ffi_call.cc -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
+
+# ------------------------------------------------------------------------------------
+# powerpc-unknown-eabisim failures.
+#
+# There are many of them.  Let's just XFAIL them for now to set a baseline.
+
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/huge_struct.c -W -Wall -Wno-psabi (test for excess errors)" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_longdouble.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_align_uint16.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_align_sint16.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_8byte.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_7byte.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_7_1_byte.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_6byte.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_6_1_byte.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_5byte.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_5_1_byte.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_4byte.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_4_1byte.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_3byte2.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_3byte1.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_3_1byte.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_2byte.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_1_1byte.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/va_struct2.c -W -Wall -Wno-psabi execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/struct9.c -W -Wall -Wno-psabi execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/struct5.c -W -Wall -Wno-psabi execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/struct3.c -W -Wall -Wno-psabi execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/return_ll1.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/return_ll.c -W -Wall -Wno-psabi execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/return_ldl.c -W -Wall -Wno-psabi execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/return_dbl2.c -W -Wall -Wno-psabi execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/return_dbl1.c -W -Wall -Wno-psabi execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/return_dbl.c -W -Wall -Wno-psabi execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/many_mixed.c -W -Wall -Wno-psabi execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/many_double.c -W -Wall -Wno-psabi execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/float_va.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/float4.c -W -Wall -Wno-psabi execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/float3.c -W -Wall -Wno-psabi execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/float2.c -W -Wall -Wno-psabi execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/float1.c -W -Wall -Wno-psabi execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-callback.c -W -Wall -Wno-psabi -DDGTEST=57 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-callback.c -W -Wall -Wno-psabi -DDGTEST=56 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-callback.c -W -Wall -Wno-psabi -DDGTEST=55 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-callback.c -W -Wall -Wno-psabi -DDGTEST=54 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-callback.c -W -Wall -Wno-psabi -DDGTEST=53 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-callback.c -W -Wall -Wno-psabi -DDGTEST=52 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-callback.c -W -Wall -Wno-psabi -DDGTEST=48 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-callback.c -W -Wall -Wno-psabi -DDGTEST=47 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-callback.c -W -Wall -Wno-psabi -DDGTEST=46 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-callback.c -W -Wall -Wno-psabi -DDGTEST=45 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-callback.c -W -Wall -Wno-psabi -DDGTEST=44 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-callback.c -W -Wall -Wno-psabi -DDGTEST=43 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=81 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=80 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=79 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=78 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=77 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=76 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=75 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=74 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=73 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=72 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=71 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=70 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=69 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=58 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=57 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=56 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=55 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=53 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=43 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=42 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=41 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=40 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=39 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=38 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=37 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=36 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=27 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=26 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=24 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=23 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=22 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=21 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=18 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=17 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=16 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=15 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.bhaible/test-call.c -W -Wall -Wno-psabi -DDGTEST=14 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized execution test" } 2020-05-12
