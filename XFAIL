@@ -94,6 +94,8 @@
 # Make sure that your X server is running and that $DISPLAY is set correctly.
 # err:systray:initialize_systray Could not create tray window
 
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/huge_struct.c -W -Wall -Wno-psabi (test for excess errors)" } 2020-05-12
+
 { "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/float2.c -W -Wall -Wno-psabi -O2 \\(test for excess errors\\)"} 2020-05-12
 { "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/float_va.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
 { "result": "FAIL", "host": "x86_64-w64-mingw32", "id": "^.*libffi.call/va_1.c -W -Wall -Wno-psabi -O2 output pattern test"} 2020-05-12
@@ -202,7 +204,6 @@
 #
 # There are many of them.  Let's just XFAIL them for now to set a baseline.
 
-{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/huge_struct.c -W -Wall -Wno-psabi (test for excess errors)" } 2020-05-12
 { "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_longdouble.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
 { "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_align_uint16.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
 { "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/cls_align_sint16.c -W -Wall -Wno-psabi output pattern test" } 2020-05-12
