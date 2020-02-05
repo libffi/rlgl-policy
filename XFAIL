@@ -8,6 +8,8 @@
 
 # ------------------------------------------------------------------------------------
 # For x86_64, GCC on the travis is old, and contains an MSABI bug.
+#
+# https://gcc.gnu.org/bugzilla/show_bug.cgi?id=85667#c0
 
 { "result": "FAIL", "host": "x86_64-pc-linux-gnu", "id": "^.*test-callback.*DGTEST=5[456].*__MSABI__ execution test"} 2020-05-12
 { "result": "FAIL", "host": "x86_64-pc-linux-gnu", "id": "^.*test-call[^b].*DGTEST=5[567].*__MSABI__ execution test"} 2020-05-12
