@@ -95,6 +95,12 @@
 { "result": "FAIL", "host": "i386-pc-linux-gnu", "id": "^*unwindtest_ffi_call.*" } 2022-07-31
 
 # ------------------------------------------------------------------------------------
+# Baseline failures for x86_64-pc-linux-gnu
+# These need to be fixed, and are just here to track regressions.
+
+{ "result": "FAIL", "host": "x86_64-pc-linux-gnu", "id": "^*struct_by_value_big.*" } 2022-07-31
+
+# ------------------------------------------------------------------------------------
 # mingw32-on-wine errors.
 #
 # Some tests trigger the following message from wine, which confuses dejagnu.  The
