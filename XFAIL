@@ -96,7 +96,7 @@
 # Baseline failures for i386-pc-linux-gnu
 # These need to be fixed, and are just here to track regressions.
 
-{ "result": "FAIL", "host": "i386-pc-linux-gnu", "id": "^.*unwindtest_ffi_call.*" } 2022-07-31
+{ "result": "FAIL", "host": "i386-pc-linux-gnu", "id": "^.*unwindtest.*" } 2022-07-31
 
 # ------------------------------------------------------------------------------------
 # Baseline failures for x86_64-pc-linux-gnu
