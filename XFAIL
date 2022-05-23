@@ -125,10 +125,10 @@
 
 
 # ------------------------------------------------------------------------------------
-# Baseline failures for visual C
+# Baseline failures for visual C and Cygwin
 # These need to be fixed, and are just here to track regressions.
 
-{ "report": "dejagnu", "result": "FAIL", "host": "x86_64-pc-cygwin", "target": "x86_64-pc-cygwin", "id": "libffi.call/struct_by_value_big.c -wd4005 -wd4244 -wd4305 -wd4477 -wd4312 -wd4311 -EHsc execution test" }
+{ "report": "dejagnu", "result": "FAIL", "host": "x86_64-pc-cygwin", "target": "x86_64-pc-cygwin", "id": "^libffi.call/struct_by_value_big.c.* execution test" }
 
 # ------------------------------------------------------------------------------------
 # Baseline failures for x86_64-pc-cygwin
