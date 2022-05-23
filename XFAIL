@@ -105,10 +105,30 @@
 { "result": "FAIL", "host": "x86_64-pc-linux-gnu", "id": "^.*struct_by_value_big.*" } 2022-07-31
 
 # ------------------------------------------------------------------------------------
+# Baseline failures for or1k-unknown-elf
+# These need to be fixed, and are just here to track regressions.
+
+{ "result": "FAIL", "host": "or1k-unknown-elf", "id": "^.*struct_by_value_big.*" } 2022-07-31
+
+# ------------------------------------------------------------------------------------
+# Baseline failures for m32-unknown-elf
+# These need to be fixed, and are just here to track regressions.
+
+{ "result": "FAIL", "host": "m32r-unknown-elf", "id": "^.*struct_by_value_big.*" } 2022-07-31
+
+# ------------------------------------------------------------------------------------
 # Baseline failures for moxie-unknown-elf
 # These need to be fixed, and are just here to track regressions.
 
 { "result": "FAIL", "host": "moxie-unknown-elf", "id": "^.*struct_by_value_big.*" } 2022-07-31
+{ "result": "FAIL", "host": "moxie-unknown-elf", "id": "^.*single_entry_structs2.*execution test"} 2022-07-31
+
+# ------------------------------------------------------------------------------------
+# Baseline failures for x86_64-pc-cygwin
+# These need to be fixed, and are just here to track regressions.
+{ "result": "FAIL", "host": "x86_64-pc-cygwin", "id": "^.*struct_by_value_big.*" } 2022-07-31
+{ "result": "FAIL", "host": "x86_64-pc-cygwin", "id": "^.*strlen.*" } 2022-07-31
+
 
 # ------------------------------------------------------------------------------------
 # mingw32-on-wine errors.
