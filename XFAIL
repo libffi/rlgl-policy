@@ -254,7 +254,7 @@
 { "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "^libffi.closures/cls_.byte..c -W -Wall -Wno-psabi execution test" } 2022-07-31
 { "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "^libffi.closures/cls_._1byte.c -W -Wall -Wno-psabi execution test" } 2022-07-31
 { "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "^libffi.closures/cls_._1_byte.c -W -Wall -Wno-psabi execution test" } 2022-07-31
-{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "^libffi.closures/struct_by_value_small.c -W -Wall -Wno-psabi execution test" } 2022-07-31
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "^libffi.call/struct_by_value_small.c -W -Wall -Wno-psabi execution test" } 2022-07-31
 { "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "^libffi.closures/cls_.byte.c -W -Wall -Wno-psabi execution test" } 2022-07-31
 
 { "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.closures/huge_struct.c -W -Wall -Wno-psabi (test for excess errors)" } 2022-07-31
