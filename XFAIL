@@ -7,14 +7,6 @@
 # unless they really are permanent.
 
 # ------------------------------------------------------------------------------------
-# For x86_64, GCC on the travis is old, and contains an MSABI bug.
-#
-# https://gcc.gnu.org/bugzilla/show_bug.cgi?id=85667#c0
-
-{ "result": "FAIL", "host": "x86_64-pc-linux-gnu", "id": "^.*test-callback.*DGTEST=5[456].*__MSABI__ execution test"} 2022-07-31
-{ "result": "FAIL", "host": "x86_64-pc-linux-gnu", "id": "^.*test-call[^b].*DGTEST=5[567].*__MSABI__ execution test"} 2022-07-31
-
-# ------------------------------------------------------------------------------------
 # We have some sh4 failures when we test on QEMU.  They look like this:
 # qemu: uncaught target signal 6 (Aborted) - core dumped
 
@@ -97,12 +89,6 @@
 # These need to be fixed, and are just here to track regressions.
 
 { "result": "FAIL", "host": "i386-pc-linux-gnu", "id": "^.*unwindtest.*" } 2022-07-31
-
-# ------------------------------------------------------------------------------------
-# Baseline failures for x86_64-pc-linux-gnu
-# These need to be fixed, and are just here to track regressions.
-
-{ "result": "FAIL", "host": "x86_64-pc-linux-gnu", "id": "^.*struct_by_value_big.*" } 2022-07-31
 
 # ------------------------------------------------------------------------------------
 # Baseline failures for or1k-unknown-elf
