@@ -771,6 +771,12 @@
 #
 # There are many of them.  Let's just XFAIL them for now to set a baseline.
 
+# The problem with the powerpc eabisim port is that it unconditionally
+# makes copies of structs to the stack, but small structures should be
+# passed in registers.  This accounts for most of these errors.
+
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/struct_by_value_2.c -W -Wall -Wno-psabi execution test" } 2022-07-31
+
 { "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "^libffi.closures/single_entry_structs..c -W -Wall -Wno-psabi execution test" } 2022-07-31
 { "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "^libffi.closures/cls_align_.int16.c -W -Wall -Wno-psabi execution test" } 2022-07-31
 { "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "^libffi.closures/cls_.byte..c -W -Wall -Wno-psabi execution test" } 2022-07-31
