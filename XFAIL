@@ -6,6 +6,18 @@
 # pass on.  Be sure to add policy expiration dates for each exception
 # unless they really are permanent.
 
+# -----------------------------------------------------------------------------------
+
+# The sparc64 and riscv64 ports needs to be updated to support copying
+# large structs by value.
+
+{ "report": "dejagnu", "result": "FAIL", "host": "sparc64-unknown-linux-gnu", "target": "sparc64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_big.c -W -Wall -Wno-psabi -O2 execution test" }
+{ "report": "dejagnu", "result": "FAIL", "host": "sparc64-unknown-linux-gnu", "target": "sparc64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_big.c -W -Wall -Wno-psabi -O0 execution test" }
+
+{ "report": "dejagnu", "result": "FAIL", "host": "riscv64-unknown-linux-gnu", "target": "riscv64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_big.c -W -Wall -Wno-psabi -O2 execution test" }
+{ "report": "dejagnu", "result": "FAIL", "host": "riscv64-unknown-linux-gnu", "target": "riscv64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_big.c -W -Wall -Wno-psabi -O0 execution test" }
+
+
 # ------------------------------------------------------------------------------------
 # We have some sh4 failures when we test on QEMU.  They look like this:
 # qemu: uncaught target signal 6 (Aborted) - core dumped
