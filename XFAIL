@@ -8,11 +8,8 @@
 
 # -----------------------------------------------------------------------------------
 
-# The sparc64 and riscv64 ports needs to be updated to support copying
-# large structs by value.
-
-{ "report": "dejagnu", "result": "FAIL", "host": "sparc64-unknown-linux-gnu", "target": "sparc64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_big.c -W -Wall -Wno-psabi -O2 execution test" }
-{ "report": "dejagnu", "result": "FAIL", "host": "sparc64-unknown-linux-gnu", "target": "sparc64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_big.c -W -Wall -Wno-psabi -O0 execution test" }
+# The riscv64 ports needs to be updated to support copying large
+# structs by value.
 
 { "report": "dejagnu", "result": "FAIL", "host": "riscv64-unknown-linux-gnu", "target": "riscv64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_big.c -W -Wall -Wno-psabi -O2 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "riscv64-unknown-linux-gnu", "target": "riscv64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_big.c -W -Wall -Wno-psabi -O0 execution test" }
