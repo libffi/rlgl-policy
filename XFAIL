@@ -126,6 +126,17 @@
 { "report": "dejagnu", "result": "FAIL", "host": "x86_64-pc-cygwin", "target": "x86_64-pc-cygwin", "id": "libffi.closures/unwindtest.cc -W -Wall -Wno-psabi -O0 (test for excess errors)" }
 
 # ------------------------------------------------------------------------------------
+
+# Baseline failures for i686-w64-mingw32
+# GCC has a bad bug that accounts for many of these errors:
+#   https://gcc.gnu.org/bugzilla/show_bug.cgi?id=105932
+
+{ "result": "FAIL", "host": "i686-w64-mingw32", "id": "^.*test-callback.*DGTEST=5[456].*execution test"}
+{ "result": "FAIL", "host": "i686-w64-mingw32", "id": "^.*test-call[^b].*DGTEST=5[567].*execution test"}
+{ "result": "FAIL", "host": "i686-w64-mingw32", "id": "^.*s55.*execution test"}
+
+
+# ------------------------------------------------------------------------------------
 # mingw32-on-wine errors.
 #
 # Some tests trigger the following message from wine, which confuses dejagnu.  The
