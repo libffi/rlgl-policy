@@ -248,7 +248,7 @@
 # makes copies of structs to the stack, but small structures should be
 # passed in registers.  This accounts for most of these errors.
 
-{ "result": "FAIL", "host": "sh4-unknown-linux-gnu", "id": "^.*s55.*execution test"} 2023-07-31
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "^.*s55.*execution test"} 2023-07-31
 
 { "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/struct_by_value_2.c -W -Wall -Wno-psabi execution test" } 2023-07-31
 
