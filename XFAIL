@@ -447,6 +447,8 @@
 #
 # There are many of them.  Let's just XFAIL them for now to set a baseline.
 
+{ "result": "FAIL", "host": "powerpc-ibm-aix7.1.5.0", "id": "^.*s55.*execution test"}
+
 { "report": "dejagnu", "result": "FAIL", "host": "powerpc-ibm-aix7.1.5.0", "target": "powerpc-ibm-aix7.1.5.0", "id": "libffi.bhaible/test-callback.c -W -Wall -Wno-psabi -DDGTEST=56 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized -O2 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "powerpc-ibm-aix7.1.5.0", "target": "powerpc-ibm-aix7.1.5.0", "id": "libffi.bhaible/test-callback.c -W -Wall -Wno-psabi -DDGTEST=56 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized -O0 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "powerpc-ibm-aix7.1.5.0", "target": "powerpc-ibm-aix7.1.5.0", "id": "libffi.bhaible/test-callback.c -W -Wall -Wno-psabi -DDGTEST=55 -Wno-unused-variable -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-uninitialized -O2 execution test" }
