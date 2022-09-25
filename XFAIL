@@ -8,13 +8,13 @@
 
 # -----------------------------------------------------------------------------------
 
-# The riscv64 and 32-bit sparc ports needs to be updated to support
+# The riscv64 and sparc ports needs to be updated to support
 # copying large structs by value.
 
 { "report": "dejagnu", "result": "FAIL", "host": "riscv64-unknown-linux-gnu", "target": "riscv64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_big.c -W -Wall -Wno-psabi -O2 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "riscv64-unknown-linux-gnu", "target": "riscv64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_big.c -W -Wall -Wno-psabi -O0 execution test" }
 
-
+{ "result": "FAIL", "host": "sparc64-unknown-linux-gnu", "id": "^.*struct_return_2H.*execution test"}
 { "report": "dejagnu", "result": "FAIL", "host": "sparc64-unknown-linux-gnu", "target": "sparc64-unknown-linux-gnu", "id": "libffi.closures/single_entry_structs2.c -W -Wall -Wno-psabi -O0 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "sparc64-unknown-linux-gnu", "target": "sparc64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_big.c -W -Wall -Wno-psabi -O2 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "sparc64-unknown-linux-gnu", "target": "sparc64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_big.c -W -Wall -Wno-psabi -O0 execution test" }
