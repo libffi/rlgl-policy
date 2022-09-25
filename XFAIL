@@ -260,6 +260,7 @@
 # passed in registers.  This accounts for most of these errors.
 
 { "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "^.*s55.*execution test"} 2023-07-31
+{ "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "^.*struct_return_2H.*execution test"} 2023-07-31
 
 { "result": "FAIL", "host": "powerpc-unknown-eabisim", "id": "libffi.call/struct_by_value_2.c -W -Wall -Wno-psabi execution test" } 2023-07-31
 
