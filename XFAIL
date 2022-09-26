@@ -8,6 +8,12 @@
 
 # -----------------------------------------------------------------------------------
 
+# We don't know how to run any of the Android tests yet.  Is this even possible?
+
+{ "result": "FAIL", "host": ".*android.*", "id": ".*execution test" }
+
+# -----------------------------------------------------------------------------------
+
 # The riscv64 and sparc ports needs to be updated to support
 # copying large structs by value.
 
