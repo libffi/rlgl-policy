@@ -369,6 +369,7 @@
 #
 # There are many of them.  Let's just XFAIL them for now to set a baseline.
 
+{ "result": "FAIL", "host": "aarch64-m1-linux-gnu" "id": ".*struct_return_8H.*execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "aarch64-m1-linux-gnu", "target": "aarch64-m1-linux-gnu", "id": "libffi.closures/stret_medium2.c -W -Wall -Wno-psabi -O2 output pattern test" }
 { "report": "dejagnu", "result": "FAIL", "host": "aarch64-m1-linux-gnu", "target": "aarch64-m1-linux-gnu", "id": "libffi.closures/stret_medium2.c -W -Wall -Wno-psabi -O0 output pattern test" }
 { "report": "dejagnu", "result": "FAIL", "host": "aarch64-m1-linux-gnu", "target": "aarch64-m1-linux-gnu", "id": "libffi.closures/stret_medium.c -W -Wall -Wno-psabi -O2 output pattern test" }
