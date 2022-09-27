@@ -14,6 +14,19 @@
 
 # -----------------------------------------------------------------------------------
 
+# Aarch64 Linux has unwinding problems when the library is built with
+# link-time optimization.
+#
+# https://github.com/libffi/libffi/issues/733
+
+{ "result": "FAIL", "host": "aarch64-lto-linux-gnu", "id": "libffi.closures/unwindtest_ffi_call.cc -W -Wall -Wno-psabi -O2 execution test" }
+{ "result": "FAIL", "host": "aarch64-lto-linux-gnu", "id": "libffi.closures/unwindtest_ffi_call.cc -W -Wall -Wno-psabi -O0 execution test" }
+{ "result": "FAIL", "host": "aarch64-lto-linux-gnu", "id": "libffi.closures/unwindtest.cc -W -Wall -Wno-psabi -O2 execution test" }
+{ "result": "FAIL", "host": "aarch64-lto-linux-gnu", "id": "libffi.closures/unwindtest.cc -W -Wall -Wno-psabi -O0 execution test" }
+
+# -----------------------------------------------------------------------------------
+
+
 # The riscv64 and sparc ports needs to be updated to support
 # copying large structs by value.
 
