@@ -367,6 +367,7 @@
 { "report": "dejagnu", "result": "FAIL", "host": "i686-w64-mingw32", "target": "i686-w64-mingw32", "id": "libffi.call/float.c -W -Wall -O0 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "i686-w64-mingw32", "target": "i686-w64-mingw32", "id": "libffi.call/err_bad_typedef.c -W -Wall -O2 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "i686-w64-mingw32", "target": "i686-w64-mingw32", "id": "libffi.call/err_bad_typedef.c -W -Wall -O0 execution test" }
+{ "report": "dejagnu", "result": "FAIL", "id": "libffi.call/bpo_38748.c -W -Wall -O0 execution test", "CC": "clang" }
 { "report": "dejagnu", "result": "FAIL", "id": "libffi.call/bpo_38748.c -W -Wall -O2 execution test", "CC": "clang" }
 { "report": "dejagnu", "result": "FAIL", "host": "i686-w64-mingw32", "target": "i686-w64-mingw32", "id": "libffi.call/align_stdcall.c -W -Wall -O2 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "i686-w64-mingw32", "target": "i686-w64-mingw32", "id": "libffi.call/align_stdcall.c -W -Wall -O0 execution test" }
