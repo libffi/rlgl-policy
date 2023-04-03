@@ -2905,5 +2905,4 @@
 { "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.bhaible/test-call.c -W -Wall -DDGTEST=2 -Wno-unused-variable -Wno-unused-parameter -Wno-uninitialized -O2 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.bhaible/test-call.c -W -Wall -DDGTEST=2 -Wno-unused-variable -Wno-unused-parameter -Wno-uninitialized -O0 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.bhaible/test-call.c -W -Wall -DDGTEST=1 -Wno-unused-variable -Wno-unused-parameter -Wno-uninitialized -O2 execution test" }
-{ "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.bhaible/test-call.c -W -Wall -DDGTEST=1 -Wno-unused-variable -Wno-unused-parameter -Wno-uninitialized -O0 execution test"
-}
+{ "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.bhaible/test-call.c -W -Wall -DDGTEST=1 -Wno-unused-variable -Wno-unused-parameter -Wno-uninitialized -O0 execution test" }
