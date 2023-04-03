@@ -25,6 +25,10 @@
 { "report": "dejagnu", "result": "FAIL", "host": "sparc64-unknown-linux-gnu", "target": "sparc64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_4.c -W -Wall -Wno-psabi -O0 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "sparc64-unknown-linux-gnu", "target": "sparc64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_3.c -W -Wall -Wno-psabi -O2 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "sparc64-unknown-linux-gnu", "target": "sparc64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_3.c -W -Wall -Wno-psabi -O0 execution test" }
+{ "report": "dejagnu", "result": "FAIL", "host": "sparc64-unknown-linux-gnu", "target": "sparc64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_4f.c -W -Wall -Wno-psabi -O2 execution test" }
+{ "report": "dejagnu", "result": "FAIL", "host": "sparc64-unknown-linux-gnu", "target": "sparc64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_4f.c -W -Wall -Wno-psabi -O0 execution test" }
+{ "report": "dejagnu", "result": "FAIL", "host": "sparc64-unknown-linux-gnu", "target": "sparc64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_3f.c -W -Wall -Wno-psabi -O2 execution test" }
+{ "report": "dejagnu", "result": "FAIL", "host": "sparc64-unknown-linux-gnu", "target": "sparc64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_3f.c -W -Wall -Wno-psabi -O0 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "sparc64-unknown-linux-gnu", "target": "sparc64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_2.c -W -Wall -Wno-psabi -O2 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "sparc64-unknown-linux-gnu", "target": "sparc64-unknown-linux-gnu", "id": "libffi.call/struct_by_value_2.c -W -Wall -Wno-psabi -O0 execution test" }
 
@@ -118,7 +122,7 @@
 { "result": "FAIL", "host": "moxie-unknown-elf", "id": "^.*single_entry_structs2.*execution test"} 2023-07-31
 
 
-# ------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------
 
 # Baseline failures for x86_64-pc-cygwin
 # These need to be fixed, and are just here to track regressions.
@@ -279,6 +283,10 @@
 { "report": "dejagnu", "result": "FAIL", "host": "i686-w64-mingw32", "target": "i686-w64-mingw32", "id": "libffi.call/struct_by_value_4.c -W -Wall -O0 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "i686-w64-mingw32", "target": "i686-w64-mingw32", "id": "libffi.call/struct_by_value_3.c -W -Wall -O2 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "i686-w64-mingw32", "target": "i686-w64-mingw32", "id": "libffi.call/struct_by_value_3.c -W -Wall -O0 execution test" }
+{ "report": "dejagnu", "result": "FAIL", "host": "i686-w64-mingw32", "target": "i686-w64-mingw32", "id": "libffi.call/struct_by_value_4f.c -W -Wall -O2 execution test" }
+{ "report": "dejagnu", "result": "FAIL", "host": "i686-w64-mingw32", "target": "i686-w64-mingw32", "id": "libffi.call/struct_by_value_4f.c -W -Wall -O0 execution test" }
+{ "report": "dejagnu", "result": "FAIL", "host": "i686-w64-mingw32", "target": "i686-w64-mingw32", "id": "libffi.call/struct_by_value_3f.c -W -Wall -O2 execution test" }
+{ "report": "dejagnu", "result": "FAIL", "host": "i686-w64-mingw32", "target": "i686-w64-mingw32", "id": "libffi.call/struct_by_value_3f.c -W -Wall -O0 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "i686-w64-mingw32", "target": "i686-w64-mingw32", "id": "libffi.call/struct_by_value_2.c -W -Wall -O2 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "i686-w64-mingw32", "target": "i686-w64-mingw32", "id": "libffi.call/struct_by_value_2.c -W -Wall -O0 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "i686-w64-mingw32", "target": "i686-w64-mingw32", "id": "libffi.call/struct9.c -W -Wall -O2 execution test" }
@@ -2636,6 +2644,10 @@
 { "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.call/struct_by_value_4.c -W -Wall -O0 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.call/struct_by_value_3.c -W -Wall -O2 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.call/struct_by_value_3.c -W -Wall -O0 execution test" }
+{ "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.call/struct_by_value_4f.c -W -Wall -O2 execution test" }
+{ "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.call/struct_by_value_4f.c -W -Wall -O0 execution test" }
+{ "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.call/struct_by_value_3f.c -W -Wall -O2 execution test" }
+{ "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.call/struct_by_value_3f.c -W -Wall -O0 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.call/struct_by_value_2.c -W -Wall -O2 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.call/struct_by_value_2.c -W -Wall -O0 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.call/struct9.c -W -Wall -O2 execution test" }
@@ -2893,4 +2905,5 @@
 { "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.bhaible/test-call.c -W -Wall -DDGTEST=2 -Wno-unused-variable -Wno-unused-parameter -Wno-uninitialized -O2 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.bhaible/test-call.c -W -Wall -DDGTEST=2 -Wno-unused-variable -Wno-unused-parameter -Wno-uninitialized -O0 execution test" }
 { "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.bhaible/test-call.c -W -Wall -DDGTEST=1 -Wno-unused-variable -Wno-unused-parameter -Wno-uninitialized -O2 execution test" }
-{ "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.bhaible/test-call.c -W -Wall -DDGTEST=1 -Wno-unused-variable -Wno-unused-parameter -Wno-uninitialized -O0 execution test" }
+{ "report": "dejagnu", "result": "FAIL", "host": "x86_64-w64-mingw32", "target": "x86_64-w64-mingw32", "id": "libffi.bhaible/test-call.c -W -Wall -DDGTEST=1 -Wno-unused-variable -Wno-unused-parameter -Wno-uninitialized -O0 execution test"
+}
