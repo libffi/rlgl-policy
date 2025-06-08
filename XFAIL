@@ -12,6 +12,10 @@
 
 { "result": "FAIL", "host": "^.*android.*", "id": "^.*execution test" }
 
+# _POSIX_BARRIERS is defined, but type/fns are not available?
+
+{ "result": "FAIL", "host": "^.*android.*", "id": "^.*tsan.*" }
+
 # -----------------------------------------------------------------------------------
 
 # The sparc ports needs to be updated to support copying large structs
