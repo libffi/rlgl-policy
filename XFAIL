@@ -2926,3 +2926,10 @@
 # functional test result.  Don't gate on it.  (rlgl baseline, 2026-06-19)
 
 { "report": "dejagnu", "result": "FAIL", "id": "^.* \\(test for excess errors\\)" }
+
+# -----------------------------------------------------------------------------------
+# Baseline failures for ppc64le (QEMU-emulated).  Complex long double execution
+# tests fail due to the long double ABI (IEEE-128 vs IBM-128); known libffi
+# limitation on powerpc64le.  Tracked as regressions to fix.
+
+{ "result": "FAIL", "host": "^powerpc64le-.*", "id": "^libffi.complex/.*longdouble.*execution test" } 2026-07-31
