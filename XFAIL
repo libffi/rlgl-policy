@@ -2933,3 +2933,10 @@
 # limitation on powerpc64le.  Tracked as regressions to fix.
 
 { "result": "FAIL", "host": "^powerpc64le-.*", "id": "^libffi.complex/.*longdouble.*execution test" } 2026-07-31
+
+# -----------------------------------------------------------------------------------
+# QEMU-emulated cross targets (regressions to fix / emulation limitations):
+#   powerpc64 (BE): the ThreadSanitizer test fails under qemu-user.
+#   sparc64: callback closures fail (SPARC closure ABI under emulation).
+{ "result": "FAIL", "host": "^powerpc64-.*", "id": "^libffi.threads/tsan.c .* execution test" } 2026-07-31
+{ "result": "FAIL", "host": "^sparc64-.*", "id": "^libffi.call/callback2?.c .* execution test" } 2026-07-31
