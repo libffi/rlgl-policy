@@ -2917,3 +2917,10 @@
 # These need to be fixed, and are just here to track regressions.
 
 { "result": "FAIL", "host": "^*-darwin.*", "id": "^.*unwindtest.*" } 2026-07-31
+
+# -----------------------------------------------------------------------------------
+# The _Complex __int128 test emits excess compiler diagnostics on essentially
+# every target (long-standing libffi limitation), so baseline it across all
+# hosts rather than per-host.  (rlgl baseline, 2026-06-18)
+
+{ "report": "dejagnu", "result": "FAIL", "id": "^libffi.complex/complex_i128.c .* \\(test for excess errors\\)" }
