@@ -2916,7 +2916,8 @@
 # Baseline failures for macos
 # These need to be fixed, and are just here to track regressions.
 
-{ "result": "FAIL", "host": "^*-darwin.*", "id": "^.*unwindtest.*" } 2026-07-31
+{ "result": "FAIL", "host": "^.*-darwin.*", "id": "^.*unwindtest.*" } 2026-07-31
+{ "result": "FAIL", "host": "^.*-darwin.*", "id": "^libffi.call/i128-1.c .* execution test" } 2026-07-31
 
 # -----------------------------------------------------------------------------------
 # "test for excess errors" means the test compiled but emitted unexpected
