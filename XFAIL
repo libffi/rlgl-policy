@@ -8,13 +8,19 @@
 
 # -----------------------------------------------------------------------------------
 
-# We don't know how to run any of the Android tests yet.  Is this even possible?
+# Android x86_64 and i686 binaries run natively on the x86_64 CI host and pass
+# all tests (x86_64 needed IEEE binary128 long double support in libffi's x86
+# backend).  Only the aarch64/armv7 binaries -- run statically under qemu-user --
+# still fail broadly, so baseline execution + tsan failures for those two hosts
+# only.  Keeping this narrow (was "^.*android.*") leaves x86_64/i686-android
+# failures visible so ABI regressions are caught instead of silently masked.
 
-{ "result": "FAIL", "host": "^.*android.*", "id": "^.*execution test" }
+{ "result": "FAIL", "host": "^(aarch64|armv7).*android.*", "id": "^.*execution test" }
 
-# _POSIX_BARRIERS is defined, but type/fns are not available?
+# _POSIX_BARRIERS is defined, but type/fns are not available on bionic for the
+# qemu-user arm targets.
 
-{ "result": "FAIL", "host": "^.*android.*", "id": "^.*tsan.*" }
+{ "result": "FAIL", "host": "^(aarch64|armv7).*android.*", "id": "^.*tsan.*" }
 
 # -----------------------------------------------------------------------------------
 
