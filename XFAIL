@@ -410,11 +410,14 @@
 { "result": "FAIL", "host": "^.*-darwin.*", "id": "^libffi.call/i128-1.c .* execution test" } 2026-07-31
 
 # -----------------------------------------------------------------------------------
-# "test for excess errors" means the test compiled but emitted unexpected
-# compiler diagnostics -- environment/toolchain-dependent noise (pervasive on
-# functional test result.  Don't gate on it.  (rlgl baseline, 2026-06-19)
+# "test for excess errors" failures now gate.  A blanket exception here
+# (2026-06-19 to 2026-07-10) masked real testsuite bugs on Windows/MSVC;
+# a scan of the full CI matrix showed the only legitimate noise is the
+# unwindtest C++ diagnostics on the QEMU-emulated powerpc64le and s390x
+# containers.  Scope the exception to exactly those.
 
-{ "report": "dejagnu", "result": "FAIL", "id": "^.* \\(test for excess errors\\)" }
+{ "result": "FAIL", "host": "^powerpc64le-.*", "id": "^libffi.closures/unwindtest.* \\(test for excess errors\\)" } 2026-07-31
+{ "result": "FAIL", "host": "^s390x-.*", "id": "^libffi.closures/unwindtest.* \\(test for excess errors\\)" } 2026-07-31
 
 # -----------------------------------------------------------------------------------
 # Baseline failures for ppc64le (QEMU-emulated).  Complex long double execution
