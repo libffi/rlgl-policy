@@ -420,12 +420,6 @@
 { "result": "FAIL", "host": "^s390x-.*", "id": "^libffi.closures/unwindtest.* \\(test for excess errors\\)" } 2026-07-31
 
 # -----------------------------------------------------------------------------------
-# Baseline failures for ppc64le (QEMU-emulated).  Complex long double execution
-# tests fail due to the long double ABI (IEEE-128 vs IBM-128); known libffi
-# limitation on powerpc64le.  Tracked as regressions to fix.
-
-{ "result": "FAIL", "host": "^powerpc64le-.*", "id": "^libffi.complex/.*longdouble.*execution test" } 2026-07-31
-
 # -----------------------------------------------------------------------------------
 # QEMU-emulated cross targets (regressions to fix / emulation limitations):
 #   powerpc64 (BE): the ThreadSanitizer test fails under qemu-user.
