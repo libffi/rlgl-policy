@@ -410,11 +410,13 @@
 { "result": "FAIL", "host": "^.*-darwin.*", "id": "^libffi.call/i128-1.c .* execution test" } 2027-07-31
 
 # gcc-15 on macOS miscompiles the small _Complex integer return exercised by
-# complex_int_small (clang on macOS and every Linux target pass it), so the
+# complex_int_small; clang on macOS and every Linux target pass it, so the
 # gcc-built native functions disagree with libffi's AAPCS-correct marshalling.
-# This is a gcc toolchain bug, not a libffi bug.  Scope the exception to
-# CC=gcc-15 so a genuine libffi/clang regression here would still gate.
-{ "result": "FAIL", "host": "^.*-darwin.*", "id": "^libffi.complex/complex_int_small.c .* execution test", "CC": "gcc-15" } 2027-07-31
+# This is a gcc toolchain bug, not a libffi bug.  (Can't scope by CC here: the
+# build_linux rlgl call passes a literal ${CC} label, not the compiler name.
+# It is safe without that scope -- clang on darwin passes this test, so this
+# FAIL-only exception can match only the gcc build's failure.)
+{ "result": "FAIL", "host": "^.*-darwin.*", "id": "^libffi.complex/complex_int_small.c .* execution test" } 2027-07-31
 
 # -----------------------------------------------------------------------------------
 # "test for excess errors" failures now gate.  A blanket exception here
